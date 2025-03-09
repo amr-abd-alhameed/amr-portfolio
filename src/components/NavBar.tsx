@@ -6,10 +6,12 @@ import { useActiveSectionContext } from "../context/active-section-context";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
 import LanguageSwitch from "./LanguageSwitch";
+import { useDirection } from "../context/direction-context";
 
 const NavBar: React.FC = () => {
   const { theme } = useTheme();
   const { language } = useLanguage();
+  const {direction} = useDirection();
 
   const [isSticky, setIsSticky] = useState(false);
   const { activeSection, setActiveSection, setTimeOfLastClick } =

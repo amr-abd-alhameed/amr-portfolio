@@ -66,6 +66,14 @@ img {
     background-position: 0% 50%;
   }
 }
+/* custom classes */
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+/* custom classes */
 
 /* GENERAL FONT STYLES */
 h1 {
