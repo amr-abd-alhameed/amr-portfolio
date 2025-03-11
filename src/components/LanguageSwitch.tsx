@@ -1,11 +1,11 @@
 import React from "react";
 import { useLanguage } from "../context/language-context";
 import { buttonLabels } from "../assets/lib/data";
-import { useDirection } from "../context/direction-context";
+// import { useDirection } from "../context/direction-context";
 
 const LanguageSwitch: React.FC = () => {
   const { language, toggleLanguage } = useLanguage();
-  const { direction, toggleDirection } = useDirection();
+  // const { direction, toggleDirection } = useDirection();
 
   return (
     <React.Fragment>
@@ -16,7 +16,7 @@ const LanguageSwitch: React.FC = () => {
           type="checkbox"
           onChange={toggleLanguage}
           checked={language === "EN"}
-          onClick={toggleDirection}
+          // onClick={toggleDirection}
         />
         <label
           className="tgl-btn"

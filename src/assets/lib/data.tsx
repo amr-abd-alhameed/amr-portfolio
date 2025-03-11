@@ -297,11 +297,11 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { ar: "الرئيسية", en: "Home", hash: "#home", icon: GoHome },
-  { ar: "المهارات", en: "Skills", hash: "#skills", icon: GoStack },
-  { ar: "المشاريع", en: "Projects", hash: "#projects", icon: GoProject },
-  { ar: "عني", en: "About me", hash: "#about-me", icon: GoPerson },
-  { ar: "تواصل معي", en: "Contact", hash: "#contact", icon: GoMail },
+  { ar: "تواصل معي", en: "Home",hashAr:"#contact", hash: "#home", icon: GoHome },
+  { ar: "عني", en: "Skills",hashAr:"#about-me", hash: "#skills", icon: GoStack },
+  { ar: "المشاريع", en: "Projects",hashAr:"#projects", hash: "#projects", icon: GoProject },
+  { ar: "المهارات", en: "About me",hashAr:"#skills", hash: "#about-me", icon: GoPerson },
+  { ar: "الرئيسية", en: "Contact",hashAr:"#home" ,hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [

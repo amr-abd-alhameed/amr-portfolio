@@ -6,12 +6,12 @@ import { useActiveSectionContext } from "../context/active-section-context";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
 import LanguageSwitch from "./LanguageSwitch";
-import { useDirection } from "../context/direction-context";
+// import { useDirection } from "../context/direction-context";
 
 const NavBar: React.FC = () => {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  const {direction} = useDirection();
+  // const {direction} = useDirection();
 
   const [isSticky, setIsSticky] = useState(false);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -53,6 +53,8 @@ const NavBar: React.FC = () => {
   }, []);
 
   const CustomNavLink: React.FC<CustomNavLinkProps> = ({
+    language,
+    linkAr,
     link,
     children,
     linkEn,
@@ -78,7 +80,7 @@ const NavBar: React.FC = () => {
 
     return (
       <NavLink
-        to={link}
+        to={language === "EN" ? link : linkAr}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className={`relative ${linkClasses}`}
@@ -108,13 +110,19 @@ const NavBar: React.FC = () => {
    `}
         >
           {navLinks.map((link, index) => (
-            <CustomNavLink key={index} link={link.hash} linkEn={link.en}>
+            <CustomNavLink
+              language={language}
+              linkAr={link.hashAr}
+              key={index}
+              link={link.hash}
+              linkEn={link.en}
+            >
               {link.en === activeSection ? (
                 <div>
                   <span className="text-[--orange] absolute -left-5 top-0">
                     &lt;
                   </span>
-                  {language === "DE" ? link.ar : link.en}
+                  {language === "AR" ? link.ar : link.en}
                   {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               ) : (
@@ -124,7 +132,7 @@ const NavBar: React.FC = () => {
                     setTimeOfLastClick(Date.now());
                   }}
                 >
-                  {language === "DE" ? link.ar : link.en}
+                  {language === "AR" ? link.ar : link.en}
 
                   {/* {link.de.toLocaleUpperCase()} */}
                 </div>
@@ -141,7 +149,13 @@ const NavBar: React.FC = () => {
           }`}
         >
           {navLinks.map((link, mobileIndex) => (
-            <CustomNavLink key={mobileIndex} link={link.hash} linkEn={link.en}>
+            <CustomNavLink
+              language={language}
+              linkAr={link.hashAr}
+              key={mobileIndex}
+              link={link.hash}
+              linkEn={link.en}
+            >
               {link.en === activeSection ? (
                 <div className="text-[3.2rem] flex flex-col items-center">
                   <link.icon />
@@ -173,6 +187,8 @@ const NavBar: React.FC = () => {
 };
 
 interface CustomNavLinkProps {
+  language: string;
+  linkAr: string;
   link: string;
   children: React.ReactNode;
   linkEn?: string;
