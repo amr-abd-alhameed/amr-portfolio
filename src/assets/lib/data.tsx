@@ -39,19 +39,19 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    ar: "مرحبا معكم عمرو عبد الحميد",
+    en: "Hi, I'm Amr Abd Elhameed",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "frontend Developer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    ar: "أنا عمرو عبد الحميد، مطور واجهات أمامية مصري أصيل من قلب القاهرة النابضة بالحياة. بعد أكثر من سنة من الشغف والتفاني في تصميم مواقع ويب وتطبيقات تفاعلية، أتقنت فن تحويل الأفكار إلى واقع ملموس باستخدام HTML، CSS، SASS، Bootstrap، JavaScript، ES6، وبراعة لا تضاهى في React.js وNext.js.",
+    en: "I'm Amr, a frontend developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
+        ar: "تواصل معي",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +60,7 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
+        ar: "مشاريعي",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -297,11 +297,41 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { ar: "تواصل معي", en: "Home",hashAr:"#contact", hash: "#home", icon: GoHome },
-  { ar: "عني", en: "Skills",hashAr:"#about-me", hash: "#skills", icon: GoStack },
-  { ar: "المشاريع", en: "Projects",hashAr:"#projects", hash: "#projects", icon: GoProject },
-  { ar: "المهارات", en: "About me",hashAr:"#skills", hash: "#about-me", icon: GoPerson },
-  { ar: "الرئيسية", en: "Contact",hashAr:"#home" ,hash: "#contact", icon: GoMail },
+  {
+    ar: "تواصل معي",
+    en: "Home",
+    hashAr: "#contact",
+    hash: "#home",
+    icon: GoHome,
+  },
+  {
+    ar: "عني",
+    en: "Skills",
+    hashAr: "#about-me",
+    hash: "#skills",
+    icon: GoStack,
+  },
+  {
+    ar: "المشاريع",
+    en: "Projects",
+    hashAr: "#projects",
+    hash: "#projects",
+    icon: GoProject,
+  },
+  {
+    ar: "المهارات",
+    en: "About me",
+    hashAr: "#skills",
+    hash: "#about-me",
+    icon: GoPerson,
+  },
+  {
+    ar: "الرئيسية",
+    en: "Contact",
+    hashAr: "#home",
+    hash: "#contact",
+    icon: GoMail,
+  },
 ] as const;
 
 export const FooterLinks = [
@@ -345,9 +375,9 @@ export const quotesData = [
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
+  title: "تعرف علي",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
+  description: "من هو عمرو عبد الحميد",
   description_EN: "A few code snippets about me",
   paragraphs_DE: [
     {
