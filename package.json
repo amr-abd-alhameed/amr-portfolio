@@ -1,13 +1,16 @@
 {
-  "name": "finaleseite2",
+  "name": "amr-portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://amr-abd-alhameed.github.io/amr-portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -17,6 +20,7 @@
     "caniuse-lite": "^1.0.30001702",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.12.2",
     "prism-react-renderer": "^2.0.6",
     "react": "^18.2.0",
