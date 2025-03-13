@@ -15,7 +15,7 @@ function App() {
             <LanguageContextProvider>
               <ActiveSectionContextProvider>
                 <Routes>
-                  <Route path="/" element={<Home />}></Route>
+                  <Route path="/amr-portfolio" element={<Home />}></Route>
                   <Route path="/imprint" element={<Home />}></Route>
                   <Route path="/privacy" element={<Home />}></Route>
                 </Routes>

@@ -169,7 +169,7 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
+    de: "المزيد من المشاريع على حيت هاب",
     en: "More Projects on Github",
   },
 } as const;
@@ -335,8 +335,8 @@ export const navLinks = [
 ] as const;
 
 export const FooterLinks = [
-  { de: "ملكية المةقع", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "سياسة الموقع", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  { ar: "ملكية المةقع", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { ar: "سياسة الموقع", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
@@ -364,12 +364,12 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
+    ar: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
+    ar: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
@@ -377,9 +377,9 @@ export const quotesData = [
 export const aboutMeData = {
   title: "تعرف علي",
   title_EN: "About me",
-  description: "من هو عمرو عبد الحميد",
+  description: "من هو عمرو عبد",
   description_EN: "A few code snippets about me",
-  paragraphs_DE: [
+  paragraphs_AR: [
     {
       title: "Die Schaltkreise meines Herzens",
       description:
@@ -423,23 +423,23 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
+    ar: "Kontakt",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+    ar: "Schreib mir eine Nachricht und ich melde mich bei dir.",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        de: "Dein Name",
+        ar: "Dein Name",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
+        ar: "Bitte gebe deinen Namen ein",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -447,12 +447,12 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
+        ar: "Deine E-Mail Adresse",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
+        ar: "Bitte gebe deine Email ein",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -460,12 +460,12 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
+        ar: "Deine Betreff",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
+        ar: "Bitte gebe einen Betreff ein",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -473,20 +473,20 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
+      ar: "Deine Nachricht",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
+      ar: "Bitte gebe deine Nachricht ein",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
+      ar: "Absenden",
       en: "Send",
     },
   },
@@ -499,11 +499,11 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      ar: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
       en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+      ar: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -511,19 +511,19 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
+    ar: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
     en: "🦄 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
+    ar: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
     en: "🦄 Thank you for your email. I will get back to you as soon as possible",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
+    ar: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
     en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
+    ar: "Bitte gebe deinen Namen ein",
     en: "Please fill in your name",
   },
 } as const;

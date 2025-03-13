@@ -32,7 +32,7 @@ const AboutMe: React.FC = () => {
     }
   };
   const paragraphs =
-    language === "AR" ? aboutMeData.paragraphs_DE : aboutMeData.paragraphs_EN;
+    language === "AR" ? aboutMeData.paragraphs_AR : aboutMeData.paragraphs_EN;
 
   return (
     <React.Fragment>
