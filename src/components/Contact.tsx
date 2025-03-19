@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
   const { ref } = useSectionInView("Contact");
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const [error, setError] = useState<string | any>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const animationReference = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
     } catch (error) {
       console.log(error);
       if (language === "AR") {
-        toast.error(toastMessages.failemailSent.ar);
+        toast.error(toastMessages.failedEmailSent.ar);
       } else {
         toast.error(toastMessages.failedEmailSent.en);
       }
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
     indentation: string
   ) => {
     const words = text.split(" ");
-    let lines: string[] = [];
+    const lines: string[] = [];
     let currentLine = "";
 
     words.forEach((word) => {
