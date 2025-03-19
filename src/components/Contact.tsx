@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
       const response = await axios.post(apiBaseUrl, data);
       console.log(response);
       if (language === "AR") {
-        toast.success(toastMessages.successEmailSent.de);
+        toast.success(toastMessages.successEmailSent.ar);
       } else {
         toast.success(toastMessages.successEmailSent.en);
       }
@@ -128,19 +128,18 @@ import  { useState } from "react";
 const [sender, setSender] = "${name}${
     lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
   }🚀";
-const [recipient, setRecipient] = "${email}${
+const [recipient, setRecipient] = \n"${email}${
     lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
   }📧";
 const [subject, setSubject] = \n"${subject}${
     lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
   }✨";
 const [message, setMessage] = 
-\`Hello, intrepid traveler! 👋\n
-Across the cosmos, a message for you:\n
+\n
 "${wordWrap(message, 40, " ")}${
     lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
   }"\n
-Wishing you stardust dreams,\n
+\n
 ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 \``;
 
@@ -231,6 +230,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
               <input
                 key={index}
                 type={input.type}
+                // className={`${language === "AR" ? "text-right" : ""}`}
                 placeholder={
                   language === "AR"
                     ? `${input.placeholder.ar}`
@@ -260,7 +260,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   theme === "dark"
                     ? "bg-[--blackblue] dark-mode-shadow "
                     : "bg-[--icewhite] dark-shadow "
-                }`}
+                } ${language === "AR" ? "text-right" : ""}`}
               />
             ))}
             <textarea
@@ -284,9 +284,13 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 theme === "dark"
                   ? "bg-[--blackblue] dark-mode-shadow"
                   : "bg-[--icewhite] dark-shadow"
-              }`}
+              } ${language === "AR" ? "text-right" : ""}`}
             />
-            <div className="privacy-checkbox flex gap-16">
+            <div
+              className={` privacy-checkbox flex gap-16 ${
+                language === "AR" ? "text-right" : ""
+              }`}
+            >
               <label
                 className="block w-2 h-2 cursor-pointer"
                 htmlFor="checkbox-label"
@@ -299,13 +303,13 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 />
                 <span className="checkbox"></span>
               </label>
-              <p>
+              <p className={`${language === "AR" ? "text-right" : ""}`}>
                 {language === "AR"
                   ? `${contactData.privacyOptIn.checkbox.ar}`
                   : `${contactData.privacyOptIn.checkbox.en}`}
               </p>
             </div>
-            <p>
+            <p className={`${language === "AR" ? "text-right" : ""}`}>
               {language === "AR"
                 ? `${contactData.privacyOptIn.description.ar}`
                 : `${contactData.privacyOptIn.description.en}`}

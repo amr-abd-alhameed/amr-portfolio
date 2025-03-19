@@ -364,12 +364,12 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    ar: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
+    ar: '"ليسَ الطريقُ لمن سبق إنما الطريقُ لمن صدق."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
-    author: "Andrew Hunt",
+    author: " عمرو عبد الحميد",
   },
   {
-    ar: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
+    ar: "الأشياء العظيمة في الأعمال لا يتم إنجازها من قبل شخص واحد. يتم إنجازها من قبل فريق من الناس",
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
@@ -423,23 +423,23 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    ar: "Kontakt",
+    ar: "تواصل معي",
     en: "Contact",
   },
   description: {
-    ar: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+    ar: "اكتب رسالتك وسارد عليك على الفور",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        ar: "Dein Name",
+        ar: "اسم الكريم",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        ar: "Bitte gebe deinen Namen ein",
+        ar: "رجائا ادخل اسم حضرتك  ",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -447,12 +447,12 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        ar: "Deine E-Mail Adresse",
+        ar: "بريد سيادتكم الاكتروني",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        ar: "Bitte gebe deine Email ein",
+        ar: "  رجاءاً ادخل اميلكم",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -460,12 +460,12 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        ar: "Deine Betreff",
+        ar: "موضوع رسالتكم",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        ar: "Bitte gebe einen Betreff ein",
+        ar: " رجاءا ادخل رسالتكم",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -473,20 +473,20 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      ar: "Deine Nachricht",
+      ar: "تفضل بالكتابة",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      ar: "Bitte gebe deine Nachricht ein",
+      ar: "رجاءاً اكمل رسالتكم",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      ar: "Absenden",
+      ar: "ارسل",
       en: "Send",
     },
   },
@@ -499,11 +499,11 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      ar: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      ar: "أوافق على أن يسمح باستخدام بياناتي الشخصية (الاسم وعنوان البريد الإلكتروني) للتواصل معي",
       en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      ar: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+      ar: "بإرسال هذا الطلب، أنت تقر بأنك قد قرأت سياسة الخصوصية.",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -511,19 +511,19 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    ar: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
+    ar: "🦄 سيتم فتح العرض التجريبي المباشر قريبًا. جاري بدء تشغيل الخوادم",
     en: "🦄 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    ar: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
+    ar: "🦄 شكراً لبريدك الإلكتروني. سأعود إليك في أقرب وقت ممكن.",
     en: "🦄 Thank you for your email. I will get back to you as soon as possible",
   },
   failedEmailSent: {
-    ar: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
+    ar: "🦄 لسوء الحظ، لم تنجح عملية إرسال بريدك الإلكتروني. يرجى المحاولة مرة أخرى لاحقً",
     en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
   },
   failedValidationName: {
-    ar: "Bitte gebe deinen Namen ein",
+    ar: "يرجى ملء اسمك",
     en: "Please fill in your name",
   },
 } as const;
