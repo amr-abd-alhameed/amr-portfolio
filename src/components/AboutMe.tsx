@@ -79,10 +79,18 @@ const AboutMe: React.FC = () => {
           >
             {paragraphs.map((paragraph, index) => (
               <SwiperSlide
-                className="bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all text-left max-lg:p-10 cursor-grab"
+                className={`bg-[--darkblue] text-[--white] flex flex-col justify-center  gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all text-left max-lg:p-10 cursor-grab ${
+                  language === "AR" ? "text-right items-end" : "items-start"
+                }`}
                 key={index}
               >
-                <div className="flex gap-6 flex-row justify-start items-center max-lg:flex-col max-lg:justify-center max-lg:text-center ">
+                <div
+                  className={`flex gap-6  items-center max-lg:flex-col max-lg:justify-center max-lg:text-center ${
+                    language === "AR"
+                      ? "text-right justify-end flex-row-reverse "
+                      : "justify-start flex-row "
+                  } `}
+                >
                   <div>
                     <img
                       src={paragraph.icon}
@@ -91,10 +99,14 @@ const AboutMe: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h2>{paragraph.title}</h2>
+                    <h2>{paragraph.title} </h2>
                   </div>
                 </div>
-                <div className="flex flex-row gap-10 max-lg:flex-col">
+                <div
+                  className={`flex gap-10 max-lg:flex-col ${
+                    language === "AR" ? "flex-row-reverse" : "flex-row "
+                  }`}
+                >
                   <div className="flex flex-col gap-4 items-center justify-between -mt-10 -mb-10 max-lg:flex-row max-lg:m-0">
                     <p className="text-white">
                       <span className="text-orange">&lt;</span>h3
@@ -111,7 +123,11 @@ const AboutMe: React.FC = () => {
                     </p>
                   </div>
                   <div>
-                    <p className="text-white text-4xl">
+                    <p
+                      className={`${
+                        language === "AR" ? "text-right" : ""
+                      } text-white text-4xl`}
+                    >
                       {paragraph.description}
                     </p>
                   </div>

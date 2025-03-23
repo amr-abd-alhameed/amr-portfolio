@@ -381,21 +381,21 @@ export const aboutMeData = {
   description_EN: "A few code snippets about me",
   paragraphs_AR: [
     {
-      title: "Die Schaltkreise meines Herzens",
+      title: "قلبي وما يهوى",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+        "عند عن تصفح الإنترنت، يستهويني استكشاف التكنولوجيا. أجد متعة في تعلم تقنيات جديدة ",
       icon: hardwareicon,
     },
     {
-      title: "Auf der Überholspur des Lebens",
+      title: "البيت الذي لا يوجد فيه كتاب هو بيت مظلم",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+        "إلى جانب البرمجة، أعشق القراءة بكل ما تحمله الكلمة من معنى. قراءة الكتب هي هوايتي وشغفي، وأجد في الكتب متعة لا أجدها في غيرها",
       icon: caricon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "مبدأ أعتنقه في حياتي",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+        "عملي كمطور ويب ليس سوى جانب واحد من جوانب حياتي. مبدئي في الحياة هو أن الاكتشاف الحقيقي يبدأ بتجاوز منطقة الراحة. إن تعلم تقنيات جديدة يلهمني ويغذي إبداعي",
       icon: travelicon,
     },
   ],
