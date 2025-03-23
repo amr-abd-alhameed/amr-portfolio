@@ -335,7 +335,7 @@ export const navLinks = [
 ] as const;
 
 export const FooterLinks = [
-  { ar: "ملكية المةقع", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { ar: "ملكية الموقع", en: "Imprint", hash: "#imprint", data: <Imprint /> },
   { ar: "سياسة الموقع", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 

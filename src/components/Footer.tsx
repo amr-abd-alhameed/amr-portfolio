@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 to="#"
                 className="text-white text-2xl font-bold hover:text-orange"
               >
-                {language === "DE" ? link.de : link.en}
+                {language === "AR" ? link.ar : link.en}
               </Link>
             }
             modal
@@ -87,10 +87,11 @@ const Footer: React.FC = () => {
           </Link>
         ))}
       </div>
-      <div>
-        <Suspense fallback={<div>Loading...</div>}>
+      <div className="text-3xl">
+        {/* <Suspense fallback={<div>Loading...</div>}>
           <LazyServiceStatus />
-        </Suspense>
+        </Suspense> */}
+        01153298262
       </div>
     </footer>
   );
