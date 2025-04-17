@@ -17,13 +17,16 @@ import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
 import spotifyicon from "../../assets/icons/spotifyicon.svg";
-import netlifyicon from "../../assets/icons/netlifyicon.svg";
+// import netlifyicon from "../../assets/icons/netlifyicon.svg";
+import bootstrap from "../../assets/icons/bootstrap.svg";
+import sass from "../../assets/icons/sassicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
+import amrEcommerce from "../../assets/img/amr22.jpg";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/me2.webp";
@@ -72,25 +75,27 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    titleEN: "Ecommerce App",
+    titleAR: "موقع تجارة الكترونية",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "موقع تجارة الكترونية يضاهي موقع امازون من حيث التصميم او الميزات المدعومة  يسمح لك بعرض المنتجات المقارنة بينها",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "this app allows users to shop online, browse product catalogs, create wish lists, add items to a cart, and complete purchases.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
+      { name: "Sass", icon: sass },
+      { name: "Bootstrap", icon: bootstrap },
       { name: "JavaScript", icon: javascripticon },
       { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
       { name: "Figma", icon: figmaicon },
       { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
       { name: "Trello", icon: trelloicon },
     ],
-    image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    image: amrEcommerce,
+    deploymenturl: "https://amr-abd-alhameed.github.io/e-commerce-app/",
+    githuburl: "https://github.com/amr-abd-alhameed/e-commerce-app",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -101,11 +106,12 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    titleEN: "ٌRealState App",
+    titleAR: "ٌموقع بيع مقابر",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "موقع غلاب هو موقع بالاصل تم تصميمة كموقع عقارات , لكن احد الزبائن طلب تحديا وهو حعله موقع للمقابر وفي ذات الوقت ان يكون جذابا ومريحا للعين والنفس",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "Gallab is a cemeteries website built using the MERN stack with Vite as the bundler. It provides various functionalities for users, including property listings, adding properties to the cart, and contacting the website’s support team. The website also utilizes several libraries like axios, framer-motion, react-dom, react-icons.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -121,9 +127,8 @@ export const projectsData = [
       { name: "Render", icon: rendericon },
     ],
     image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
-    githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+    deploymenturl: "https://amr-abd-alhameed.github.io/ghallab/",
+    githuburl: "https://github.com/amr-abd-alhameed/ghallab",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -134,7 +139,8 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    titleEN: "Furniture Organizer",
+    titleAR: " اسمه لم يحدد بعد",
     description:
       "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
     description_EN:
