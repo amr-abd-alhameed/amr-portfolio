@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
   const codeSnippet = `
 import  { useState } from "react";
 
-// 🌈 Spreading Stardust: 
+// Spreading Stardust: 
 // Crafting Cosmic Email 🌌
 
 const [sender, setSender] = "${name}${
